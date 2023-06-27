@@ -3,6 +3,8 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
+import json
+import requests
 
 """
 # Welcome to Streamlit!
@@ -14,6 +16,12 @@ forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
+listurl='https://github.com/shrayv/test/blob/main/company_tickers.json'
+
+header = {'User-Agent':'YourEmail@YourDomain.com'}
+response = requests.get(listurl, headers=header)
+
+
 
 
 with st.echo(code_location='below'):
