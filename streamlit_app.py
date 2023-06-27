@@ -20,13 +20,13 @@ In the meantime, below is an example of what you can do with just a few lines of
 # github token
 token = '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'
 headers = {'Authorization' : 'token ' + token }
-url = 'https://raw.githubusercontent.com/shrayv/test/main/company_tickers.json?token=GHSAT0AAAAAACEIPXINF56ZV2F2IUESRYTKZE2YJAA'
-response = requests.get(url, headers=header)
+url = 'url = 'https://raw.githubusercontent.com/shrayv/test/main/company_tickers.json''
+response = requests.get(url)
 companylist=pd.json_normalize(list(response.json().values()))
 
 
 option = st.selectbox(
     'Select Company',
-    (data['ticker']))
+    (companylist['ticker']))
 
 st.write('You selected:', option)
