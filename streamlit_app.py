@@ -20,7 +20,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 # github token
 token = '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'
 headers = {'Authorization' : 'token ' + token }
-url = 'url = 'https://raw.githubusercontent.com/shrayv/test/main/company_tickers.json''
+url = 'https://raw.githubusercontent.com/shrayv/test/main/company_tickers.json'
 response = requests.get(url)
 companylist=pd.json_normalize(list(response.json().values()))
 
