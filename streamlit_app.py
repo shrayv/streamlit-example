@@ -16,11 +16,6 @@ forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
-listurl='https://github.com/shrayv/test/blob/main/company_tickers.json'
-
-header = {'User-Agent':'YourEmail@YourDomain.com'}
-response = requests.get(listurl, headers=header)
-
 
 # github token
 token = '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'
