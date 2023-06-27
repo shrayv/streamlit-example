@@ -27,6 +27,6 @@ companylist=pd.json_normalize(list(response.json().values()))
 
 option = st.selectbox(
     'Select Company',
-    (companylist['ticker']))
+    (companylist['title']))
 
 st.write('You selected:', option)
